@@ -1,4 +1,4 @@
-![Let's play](https://m.media-amazon.com/images/I/51MSRaazr5L.png)
+![Let's play](https://cdn-icons-png.flaticon.com/256/2537/2537918.png)
 
 # Juega a adivinar el número:
 
