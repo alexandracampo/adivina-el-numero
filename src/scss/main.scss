@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-color: rgb(35, 50, 63);
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+
+  .card {
+    background-color: rgb(29, 37, 49);
+    width: 18rem;
+    height: 35rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 9px 7px 15px 0px rgba(0, 0, 0, 0.66);
+
+    .h1 {
+      margin-bottom: 5rem;
+      font-weight: 800;
+
+      animation: wiggle 3s linear infinite;
+
+      @keyframes wiggle {
+        0%,
+        7% {
+          transform: rotateZ(0);
+        }
+        15% {
+          transform: rotateZ(-15deg);
+        }
+        20% {
+          transform: rotateZ(10deg);
+        }
+        25% {
+          transform: rotateZ(-10deg);
+        }
+        30% {
+          transform: rotateZ(6deg);
+        }
+        35% {
+          transform: rotateZ(-4deg);
+        }
+        40%,
+        100% {
+          transform: rotateZ(0);
+        }
+      }
+    }
+
+    .form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      .label {
+        margin-bottom: 1rem;
+      }
+
+      .box-play {
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        height: 3rem;
+        width: 5rem;
+        text-align: center;
+        outline: none;
+        border: none;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 1.8rem;
+
+        &:valid {
+          background-color: rgb(107, 136, 180);
+        }
+
+        &:hover {
+          background-color: rgb(172, 107, 107);
+        }
+      }
+
+      .button {
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        background-color: rgb(11, 16, 20);
+        height: 2rem;
+        width: 5rem;
+        cursor: pointer;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        color: white;
+
+        &:active {
+          transform: scale(0.98);
+        }
+      }
+    }
+    .box-clue {
+      margin-bottom: 1rem;
+    }
+
+    .box-counter {
+      margin-bottom: 1rem;
+    }
+
+    .btn-play-again {
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      background-color: rgb(11, 16, 20);
+      height: 2rem;
+      width: 8rem;
+      cursor: pointer;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      color: white;
+      position: relative;
+      bottom: -3rem;
+
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+  }
+}
