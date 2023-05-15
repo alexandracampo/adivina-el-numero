@@ -45,12 +45,10 @@ function throwConfetti() {
 }
 
 const randomNumber = getRandomNumber(100)
-console.log(randomNumber);
 
 function randomGame(event) {
     event.preventDefault()
     const numberChoice = parseInt(gameNumber.value);
-    console.log(numberChoice);
 
     if (numberChoice > 100 || numberChoice < 1 || isNaN(numberChoice)) {
         printScreen("El valor introducido debe ser un número y debe estar entre 1 y 100");
