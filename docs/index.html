@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Título</title>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="icon" href="./assets/images/favicon.png" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,400;1,600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <main class="main">
+      <div class="card">
+          <h1 class="h1">Adivina el número</h1>
+          <form class="form">
+              <label class="label" for="number">Introduce aquí tu número:</label>
+              <input class="js-number box-play" type="text">
+              <input class="js-button button" type="button" value="Prueba">
+          </form>
+          <p class="js-clue box-clue">Pista: Escribe un número y dale al botón 'prueba'</p>
+          <p class="js-counter box-counter">Número de intentos: 0</p>
+
+          <button class="btn-play-again js-btn-reset">Juega otra vez</button>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.9.3/tsparticles.confetti.bundle.min.js"></script>
+  </main>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
