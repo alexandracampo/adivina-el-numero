@@ -18,7 +18,8 @@
           <h1 class="h1">Adivina el número</h1>
           <form class="form">
               <label class="label" for="number">Introduce aquí tu número:</label>
-              <input class="js-number box-play" type="text">
+              <input class="js-number box-play" type="number" step="1" min="1" max="100" pattern="[0-9]*"
+                  title="Por favor, ingrese solo números" required>
               <input class="js-button button" type="button" value="Prueba">
           </form>
           <p class="js-clue box-clue">Pista: Escribe un número y dale al botón 'prueba'</p>
